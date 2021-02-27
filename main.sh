@@ -1,7 +1,7 @@
 KERNEL=$(pwd)/kernel-dir
-git clone https://$fromKey@github.com/$fromUser/X01BD_Kernel -b 20201208/main $KERNEL
+git clone https://github.com/RyuujiX/kernel-xobod-r -b lineage-18.1-source $KERNEL
 cd $KERNEL
-git remote add myrepo https://$myKey@github.com/RyuujiX/kernel-x01bd
+git remote add myrepo https://github.com/RyuujiX/kernel-xobod-los18
 git push -f myrepo --all
 cd ..
 rm -rf $KERNEL
