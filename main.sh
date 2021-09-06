@@ -1,7 +1,7 @@
 KERNEL=$(pwd)/kernel-dir
-git clone https://github.com/Atom-X-Devs/atom-x-tc-build -b main $KERNEL
+git clone https://$GIT_SECRET@github.com/$GIT_USERNAME/android_kernel_asus_sdm660 -b 18.1-u $KERNEL
 cd $KERNEL
-git remote add myrepo https://$GIT_SECRET@github.com/$GIT_USERNAME/tc-builder
+git remote add myrepo https://$GIT_SECRET@github.com/$GIT_USERNAME/kernel_asus_sdm660
 git push -f myrepo --all
 cd ..
 rm -rf $KERNEL
